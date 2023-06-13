@@ -1,28 +1,29 @@
 <?php
-    $firstNumber = readline('First number: ');
-    $secondNumber = readline('Second number: ');
-    $operation = readline('Operation: ');
-    $resultado = 0;
+$firstNumber = readline('First number: ');
+$secondNumber = readline('Second number: ');
+$operation = readline('Operation: ');
+$resultado = 0;
 
-    switch ($operation) {
-        case '-':
-            $resultado = $firstNumber - $secondNumber;
-            break;
+switch ($operation) {
+    case '-':
+        $resultado = $firstNumber - $secondNumber;
+        break;
 
-        case '+':
-            $resultado = $firstNumber + $secondNumber;
-            break;
-            case '-':
-                $resultado = $firstNumber - $secondNumber;
-                break;
+    case '/':
+        $resultado = $firstNumber / $secondNumber;
+        break;
 
-            case '+':
-                $resultado = $firstNumber + $secondNumber;
-                break;
-        default:
-            $resultado = 'Digite um operador valido';
-            break;
-    }
+    case '+':
+        $resultado = $firstNumber + $secondNumber;
+        break;
 
-    echo $resultado;
-?>
+    case '*':
+        $resultado = $firstNumber * $secondNumber;
+        break;
+        
+    default:
+        $resultado = 'Digite um operador valido';
+        break;
+}
+
+echo $resultado;
