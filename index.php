@@ -9,10 +9,16 @@
             $resultado = $firstNumber - $secondNumber;
             break;
 
-        case '/':
-            $resultado = $firstNumber / $secondNumber;
+        case '+':
+            $resultado = $firstNumber + $secondNumber;
             break;
-        
+            case '-':
+                $resultado = $firstNumber - $secondNumber;
+                break;
+
+            case '+':
+                $resultado = $firstNumber + $secondNumber;
+                break;
         default:
             $resultado = 'Digite um operador valido';
             break;
